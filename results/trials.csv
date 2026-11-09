@@ -1,0 +1,13 @@
+condition,model,task,trial,success,score,total_tokens,cached_tokens,fresh_tokens,requests,tool_calls,wall_time_s,exit_code
+baseline,deepseek-v4-pro,teb_12_paper_ppt_generation,1,False,0.0,1524062,1349632,174430,49,60,712.9,0
+baseline,deepseek-v4-pro,teb_12_paper_ppt_generation,2,True,1.0,944038,824576,119462,29,36,601.9,0
+baseline,deepseek-v4-pro,teb_13_sql_copilot_query_generation,1,True,1.0,232205,190464,41741,14,14,219.0,0
+baseline,deepseek-v4-pro,teb_13_sql_copilot_query_generation,2,True,1.0,698304,584448,113856,21,23,759.2,0
+baseline,deepseek-v4-pro,teb_14_experiment_analysis_report_generation,1,False,0.7778,352837,296576,56261,16,15,332.0,0
+baseline,deepseek-v4-pro,teb_14_experiment_analysis_report_generation,2,False,0.7778,317182,254208,62974,15,19,293.4,0
+selfcheck,deepseek-v4-pro,teb_12_paper_ppt_generation,1,True,1.0,1399159,1206656,192503,41,55,731.2,0
+selfcheck,deepseek-v4-pro,teb_12_paper_ppt_generation,2,True,1.0,1503290,1368064,135226,41,52,559.9,0
+selfcheck,deepseek-v4-pro,teb_13_sql_copilot_query_generation,1,True,1.0,865413,764928,100485,25,26,467.2,0
+selfcheck,deepseek-v4-pro,teb_13_sql_copilot_query_generation,2,True,1.0,434944,379392,55552,18,20,300.0,0
+selfcheck,deepseek-v4-pro,teb_14_experiment_analysis_report_generation,1,False,0.8889,491916,422656,69260,18,18,420.4,0
+selfcheck,deepseek-v4-pro,teb_14_experiment_analysis_report_generation,2,False,0.7778,628984,531328,97656,27,26,365.2,0
