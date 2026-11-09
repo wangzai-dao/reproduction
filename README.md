@@ -27,7 +27,7 @@ change and measured its effect.
 |---|---|
 | `report.pdf` | The report: target claim, setup, results vs Table 4, the change, debug notes, limitations |
 | `slides.pptx` | 13-slide deck for the recorded presentation |
-| `patches/selfcheck_sysprompt.txt` | **The one change** — this block is appended to `assets/sys_prompt.txt` |
+| `patches/selfcheck_sysprompt.txt` | **The one change** — this block is appended to `assets/sys_prompt.txt` (English translation; the Chinese original that was actually run is `selfcheck_sysprompt_zh.txt`) |
 | `harness/run_trial.py` | Runs one isolated trial: fresh repo copy → agent → grade → record |
 | `harness/metrics_recorder.py` | Plugin that records tokens, requests, tool calls and wall time via the framework's hooks |
 | `harness/aggregate.py` | `results/trials.csv` → per-task means |
@@ -98,7 +98,10 @@ off-peak list price for `deepseek-v4-pro`).
 ## 5. The change
 
 `patches/selfcheck_sysprompt.txt` is appended to `assets/sys_prompt.txt`. It is prompt text
-only — no code, no tool, no grader was modified:
+only — no code, no tool, no grader was modified. The file here is an **English translation**;
+the runs reported in `results/` used the Chinese original in
+`patches/selfcheck_sysprompt_zh.txt`, because the agent's own system prompt is Chinese. The two
+say exactly the same thing:
 
 * before finishing, the agent must open every artefact with the right library;
 * count pages, characters and columns against the stated limits;
